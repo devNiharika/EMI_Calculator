@@ -9,28 +9,28 @@
         android:id="@+id/sno"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
+        android:layout_weight="0.2"
         android:padding="8dp" />
 
     <TextView
         android:id="@+id/tenure"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1"
+        android:layout_weight="0.2"
         android:padding="8dp" />
 
     <TextView
         android:id="@+id/emi"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.4"
+        android:layout_weight="0.3"
         android:padding="8dp" />
 
     <TextView
         android:id="@+id/total"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.4"
+        android:layout_weight="0.3"
         android:padding="8dp" />
 
 </LinearLayout>
