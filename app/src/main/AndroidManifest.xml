@@ -26,23 +26,19 @@
         //Database Model
         <meta-data
             android:name="AA_MODELS"
-            android:value="com.emi_calculator.Data.User" />
-
-        //Database Model
-        <meta-data
-            android:name="AA_MODELS"
-            android:value="com.emi_calculator.Data.Query" />
+            android:value="com.emi_calculator.Data.User, com.emi_calculator.Data.Query" />
 
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".PrincipalInputActivity" />
+        <activity android:name=".ProjectionActivity"></activity>
     </application>
 
 </manifest>
