@@ -7,28 +7,15 @@ import com.activeandroid.annotation.Table;
 /**
  * Created by Niharika Rastogi on 23-04-2017.
  */
+
 @Table(name = "Queries", id = "_id")
 public class Query extends Model {
 
-    // Column to store User's Name
+    //Column to store principal amount
     @Column
-    public String NAME;
+    public int PRINCIPAL;
 
-    // Column to store User's Mobile Number
-    @Column(unique = true, onUniqueConflict = Column.ConflictAction.REPLACE)
-    public String MOBILE_NUMBER;
-
-    // Column to store User's Email
+    //Column to store tenure
     @Column
-    public String EMAIL;
-
-    // Column to store User's Query
-    @Column
-    public String QUERY;
-
-    public Query() {
-        // Default Constructor
-        super();
-    }
-
+    public int TENURE;
 }

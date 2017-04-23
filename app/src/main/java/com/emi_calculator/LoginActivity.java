@@ -7,7 +7,7 @@ import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.emi_calculator.Data.Query;
+import com.emi_calculator.Data.User;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,13 +45,14 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        Query query = new Query();
-        query.NAME = name.getText().toString();
-        query.MOBILE_NUMBER = mobile.getText().toString();
-        query.EMAIL = email.getText().toString();
-        query.save();
+        User user = new User();
+        user.NAME = name.getText().toString();
+        user.MOBILE_NUMBER = mobile.getText().toString();
+        user.EMAIL = email.getText().toString();
+        user.save();
 
         Log.d("LoginActivity", "Data Saved!");
-        startActivity(new Intent(this, PrincipalInputActivity.class));
+        startActivity(new Intent(this, PrincipalInputActivity.class).putExtra("mobile", mobile.getText().toString()));
+        finish();
     }
 }
