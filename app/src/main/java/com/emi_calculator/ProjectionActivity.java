@@ -5,10 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.emi_calculator.Adapter.ProjectionAdapter;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import butterknife.ButterKnife;
 
@@ -26,6 +28,9 @@ public class ProjectionActivity extends AppCompatActivity {
         int start = Math.max(0, tenure - 3);
         int end = tenure + 3;
 
+        Log.d("ProjectionActivity", String.valueOf(start));
+        Log.d("ProjectionActivity", String.valueOf(end));
+
         ArrayList<String> sno = new ArrayList<>();
         ArrayList<String> term = new ArrayList<>();
         ArrayList<String> emi = new ArrayList<>();
@@ -37,6 +42,12 @@ public class ProjectionActivity extends AppCompatActivity {
             emi.add(String.valueOf(emi(principal, k)));
             total.add(String.valueOf(emi(principal, k) * k));
         }
+
+
+        Log.d("ProjectionActivity", Arrays.toString(sno.toArray()));
+        Log.d("ProjectionActivity", Arrays.toString(term.toArray()));
+        Log.d("ProjectionActivity", Arrays.toString(emi.toArray()));
+        Log.d("ProjectionActivity", Arrays.toString(total.toArray()));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);

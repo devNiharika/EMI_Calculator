@@ -40,7 +40,10 @@ public class ProjectionAdapter extends RecyclerView.Adapter<ProjectionAdapter.Vi
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-
+        holder.sno.setText(sno.get(position));
+        holder.tenure.setText(tenure.get(position));
+        holder.emi.setText(emi.get(position));
+        holder.total.setText(total.get(position));
     }
 
     @Override
