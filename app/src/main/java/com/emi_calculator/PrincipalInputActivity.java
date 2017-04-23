@@ -1,5 +1,6 @@
 package com.emi_calculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputEditText;
@@ -41,6 +42,7 @@ public class PrincipalInputActivity extends AppCompatActivity {
             return;
         }
 
-
+        startActivity(new Intent(this, ProjectionActivity.class).putExtra("principal", principal.getText().toString()).putExtra("tenure", tenure.getText().toString()));
+        finish();
     }
 }
