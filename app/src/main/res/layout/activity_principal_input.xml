@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Principal" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Months" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rate: 36%p.a"
+        android:padding="16dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:hint="Calculate" />
 
 </LinearLayout>
