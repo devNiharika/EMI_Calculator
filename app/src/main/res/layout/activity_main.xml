@@ -59,9 +59,10 @@
         </android.support.design.widget.TextInputLayout>
 
         <Button
+            android:id="@+id/submit"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:hint="SUBMIT" />
+            android:text="SUBMIT" />
 
     </LinearLayout>
 

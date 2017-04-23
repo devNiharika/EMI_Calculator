@@ -18,11 +18,15 @@ public class Query extends Model {
     @Column(unique = true, onUniqueConflict = Column.ConflictAction.REPLACE)
     public String MOBILE_NUMBER;
 
+    // Column to store User's Email
+    @Column
+    public String EMAIL;
+
     // Column to store User's Query
     @Column
     public String QUERY;
 
-    Query() {
+    public Query() {
         // Default Constructor
         super();
     }

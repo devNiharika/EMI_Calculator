@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EMI_Calculator</string>
+    <string name="app_name">EMI Calculator</string>
     <string name="title_login">Login</string>
     <string name="title_principal">Principal Amount</string>
     <string name="title_projection">Loan Projection</string>
