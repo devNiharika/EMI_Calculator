@@ -4,6 +4,8 @@ import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 
+import java.util.List;
+
 /**
  * Created by Niharika Rastogi on 23-04-2017.
  */
@@ -22,13 +24,13 @@ public class User extends Model {
     @Column
     public String EMAIL;
 
-    //Column to store User's Query
-    @Column
-    public Query QUERY;
-
     public User() {
         // Default Constructor
         super();
+    }
+
+    public List<Query> QUERIES() {
+        return getMany(Query.class, MOBILE_NUMBER);
     }
 
 }
