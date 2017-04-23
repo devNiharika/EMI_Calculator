@@ -37,7 +37,7 @@ public class ProjectionActivity extends AppCompatActivity {
         int principal = Integer.parseInt(intent.getStringExtra("principal"));
         int tenure = Integer.parseInt(intent.getStringExtra("tenure"));
 
-        int start = Math.max(0, tenure - 3);
+        int start = Math.max(1, tenure - 3);
         int end = tenure + 3;
 
         ArrayList<String> sno = new ArrayList<>();

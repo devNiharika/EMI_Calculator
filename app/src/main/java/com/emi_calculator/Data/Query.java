@@ -18,4 +18,8 @@ public class Query extends Model {
     //Column to store tenure
     @Column
     public int TENURE;
+
+    // Column to store User's Mobile Number
+    @Column
+    public String MOBILE_NUMBER;
 }

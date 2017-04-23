@@ -52,6 +52,8 @@ public class LoginActivity extends AppCompatActivity {
         user.save();
 
         Log.d("LoginActivity", "Data Saved!");
+
+        Log.d("Queries", user.QUERIES().toString());
         startActivity(new Intent(this, PrincipalInputActivity.class).putExtra("mobile", mobile.getText().toString()));
         finish();
     }

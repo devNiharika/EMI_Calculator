@@ -7,6 +7,8 @@ import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.emi_calculator.Data.Query;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -42,7 +44,12 @@ public class PrincipalInputActivity extends AppCompatActivity {
             return;
         }
 
+        Query query = new Query();
+        query.PRINCIPAL = Integer.parseInt(principal.getText().toString());
+        query.TENURE = Integer.parseInt(tenure.getText().toString());
+        query.MOBILE_NUMBER = getIntent().getStringExtra("mobile");
+        query.save();
+
         startActivity(new Intent(this, ProjectionActivity.class).putExtra("principal", principal.getText().toString()).putExtra("tenure", tenure.getText().toString()));
-        finish();
     }
 }

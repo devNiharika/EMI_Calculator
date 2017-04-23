@@ -30,7 +30,7 @@ public class User extends Model {
     }
 
     public List<Query> QUERIES() {
-        return getMany(Query.class, MOBILE_NUMBER);
+        return getMany(Query.class, "MOBILE_NUMBER");
     }
 
 }
