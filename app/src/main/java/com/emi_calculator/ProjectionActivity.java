@@ -45,6 +45,11 @@ public class ProjectionActivity extends AppCompatActivity {
         ArrayList<String> emi = new ArrayList<>();
         ArrayList<String> total = new ArrayList<>();
 
+        sno.add("S.No.");
+        term.add("Tenure");
+        emi.add("EMI");
+        total.add("Total");
+
         for (int i = 1, k = start; k <= end; k++, i++) {
             sno.add(String.valueOf(i));
             term.add(String.valueOf(k));
@@ -65,4 +70,3 @@ public class ProjectionActivity extends AppCompatActivity {
         return (float) (principal * .03 * (Math.pow(1.03, tenure)) / ((Math.pow(1.03, tenure) - 1)));
     }
 }
-
